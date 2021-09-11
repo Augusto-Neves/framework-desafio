@@ -1,0 +1,32 @@
+:root{
+    --bg-color: #202124;
+    --white: #F2F2F2;
+    --purple: #6B25CA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100vh;
+   width: 100vw;
+   overflow-x: hidden;
+   font-family: 'Neuton', serif; 
+
+   background-color: var(--bg-color);
+   color: var(--white);
+}
+
+ul li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
