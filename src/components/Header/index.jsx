@@ -1,14 +1,25 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import Logo from '../../assets/img/logo.png'
-import './style.scss'
+import React from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import {IoArrowBackCircleSharp} from "react-icons/io5"
 
-export default function Header(){
-    return(
-        <header>
-            <NavLink to="/">
-              <img src={Logo} alt="" />  
-            </NavLink>
-        </header>
-    );
+import Logo from "../../assets/img/logo.png";
+import "./style.scss";
+
+export default function Header() {
+  const location = useLocation();
+  return (
+    <header>
+      {/* Botão de Voltar para o ínicio */}
+      {location.pathname === "/" ? (
+        <div></div>
+      ) : (
+        <div>
+          <NavLink to="/"> <IoArrowBackCircleSharp /></NavLink>
+        </div>
+      )}
+      <NavLink to="/">
+        <img src={Logo} alt="YourLists" />
+      </NavLink>
+    </header>
+  );
 }

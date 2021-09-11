@@ -1,15 +1,29 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 10vh;
     padding: 20px 2%;
 
     background-color: var(--purple);
-    border-bottom: 2px solid var(--bg-color);    
-    box-shadow: 1px 1px 10px -3px var(--white);
+    border-bottom: 2px solid var(--white);
+    box-shadow: 1px 1px 9px -3px var(--white);
 
     img {
+        align-self: center;
         width: 200px;
     }
+
+    svg {
+        color: var(--white);
+        width: 100px;
+        height: 50px;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+           transform: rotate(-360deg); 
+        }
+    }
+
+   
 }
