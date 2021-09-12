@@ -1,17 +1,20 @@
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    max-width: 1280px;
-    margin: 0 auto;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
 
     ul {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 18px;
         width: 100%;
         text-align: center;
         margin: 0;
@@ -28,15 +31,23 @@ main {
         width: 100%;
         color: var(--white);
         font-weight: 700;
-        font-size: 50px;
-        padding: 10px;
-        margin: 14px;
+        font-size: 3.125rem;
+        padding: 10px 2%;
         background-color: var(--purple);
         border-radius: 50px;
         transition: 0.4s ease-in-out;
 
         &:hover {
             transform: scale(1.05);
+        }
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main {
+        a {
+            font-size: 2.125rem;
         }
     }
 }

@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    height: 10vh;
+    padding: 20px 2%;
+    border-top: 1px solid var(--white);
+
+    .social-midias {
+
+        a {
+            color: var(--white);
+            margin-right: 8px;
+
+            i {
+                padding: 4px;
+                transition: 0.4s;
+            }
+
+            & i:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        flex-direction: column;
+    }
+}

@@ -1,23 +1,25 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./style.scss";
 
 export default function Home() {
   return (
     <main>
-      <ul>
-        <li>
-          <NavLink to="/posts">Postagens</NavLink>
-        </li>
+      <div className="wrapper">
+        <ul>
+          <li>
+            <Link to="/posts">Postagens</Link>
+          </li>
 
-        <li>
-          <NavLink to="/albums">Álbuns</NavLink>
-        </li>
+          <li>
+            <Link to="/albums">Álbuns</Link>
+          </li>
 
-        <li>
-          <NavLink to="/to-do">To-Dos</NavLink>
-        </li>
-      </ul>
+          <li>
+            <Link to="/to-do">To-Dos</Link>
+          </li>
+        </ul>
+      </div>
     </main>
   );
 }
