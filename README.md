@@ -20,7 +20,7 @@ Esse projeto foi desenvolvido usando as seguintes tecnologias:
 
 ## 🚀 Como executar
 
-Primeiro de tudo você precisa ter o `git`,`node` e `yarn` instalados na sua máquina.
+Primeiro de tudo você precisa ter o `git`,`node` e `yarn` ou `npm` instalados na sua máquina.
 
 Depois de instalados, clone o projeto e acesse a pasta do mesmo.
 
@@ -33,10 +33,12 @@ Para iniciá-lo, siga os passos abaixo:
 
 ```bash
 # Instalar as dependências
-$ yarn install
+$ yarn 
+$ ou npm instal
 
 # Iniciar o projeto
 $ yarn start
+$ ou npm start
 ```
 
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
