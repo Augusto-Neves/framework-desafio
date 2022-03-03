@@ -34,7 +34,7 @@ Para iniciá-lo, siga os passos abaixo:
 ```bash
 # Instalar as dependências
 $ yarn 
-$ ou npm instal
+$ ou npm install
 
 # Iniciar o projeto
 $ yarn start
